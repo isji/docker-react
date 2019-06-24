@@ -6,5 +6,5 @@ services:
 before_install:
   - docker build -t isji/docker-react -f Dockerfile.dev .
 
-sript:
+script:
   - docker run isji/docker-react npm run test -- --coverage
